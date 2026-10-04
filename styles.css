@@ -1,0 +1,20 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; color: #172437; background: #eef3f8; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.app-shell { max-width: 620px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom)); }
+header { padding: 8px 4px 20px; }
+.eyebrow { margin: 0; color: #5e6f82; font-size: .8rem; letter-spacing: .08em; }
+h1 { margin: 3px 0 5px; font-size: 2rem; }.total { margin: 0; color: #255c9b; font-size: 1.2rem; font-weight: 700; }
+.card { margin: 14px 0; padding: 17px; background: #fff; border: 1px solid #dde6f0; border-radius: 18px; box-shadow: 0 4px 14px #18385b0d; }
+h2 { margin: 0; font-size: 1.05rem; }.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+form { display: grid; gap: 12px; margin-top: 15px; } label { display: grid; gap: 5px; color: #405166; font-size: .88rem; font-weight: 600; }
+input, select, button { font: inherit; } input, select { width: 100%; min-height: 44px; padding: 9px 11px; color: #172437; border: 1px solid #cbd8e6; border-radius: 10px; background: #fff; }
+.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }.primary, .secondary { min-height: 45px; border: 0; border-radius: 11px; font-weight: 700; cursor: pointer; }
+.primary { color: white; background: #255c9b; }.primary:active { background: #194b83; }.secondary { padding: 0 14px; color: #255c9b; background: #eaf2fb; }
+#month-picker { width: 132px; min-height: 35px; padding: 5px; font-size: .88rem; }.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
+.summary div { padding: 10px 7px; text-align: center; background: #f4f8fc; border-radius: 10px; color: #5d6c7c; font-size: .75rem; }.summary strong { display: block; margin-top: 4px; color: #24415f; font-size: .92rem; }
+.records { margin-top: 10px; }.record { display: flex; justify-content: space-between; gap: 8px; padding: 13px 0; border-bottom: 1px solid #edf1f5; }.record:last-child { border-bottom: 0; }
+.record-title, .record-meta, .record-note { margin: 0; }.record-title { font-weight: 700; }.record-meta, .record-note, .muted, .privacy-note { color: #718094; font-size: .8rem; }.record-meta { margin-top: 3px; }.record-note { margin-top: 4px; }.record-right { flex: none; text-align: right; }.record-right strong { display: block; color: #255c9b; }.delete-button { margin-top: 6px; padding: 2px 0; color: #a34e4e; border: 0; background: transparent; font-size: .78rem; cursor: pointer; }.empty { padding: 16px 0; color: #718094; text-align: center; }
+.backup-actions { display: flex; gap: 10px; margin-top: 18px; }.file-button { display: inline-flex; align-items: center; justify-content: center; cursor: pointer; }.file-button input { display: none; }.privacy-note { margin: 13px 3px 0; line-height: 1.5; }
+@media (max-width: 390px) { .card { padding: 14px; }.summary { gap: 5px; }.summary div { padding: 9px 3px; }.two-columns { grid-template-columns: 1fr; } }
+
